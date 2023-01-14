@@ -13,19 +13,19 @@ function numericNumber(e){
 let currency = [
     {   
         country : "Singapore",
-        forMMK : 1530,
+        forMMK : 2125,
         forTHB : 25.02,
         forUSD : 0.76,
     },
     {   
         country : "USA",
-        forMMK : 2100,
+        forMMK : 2848,
         forTHB : 33.12,
         forSGD : 1.32,
     },
     {
         country : "Thai",
-        forMMK : 63.41,
+        forMMK : 86.5,
         forUSD : 0.030,
         forSGD : 0.040,
     },
@@ -72,19 +72,19 @@ output.addEventListener("mouseleave",() =>{
         })
         if(select.value === "USD"  && select1.value === "MMK"){
             dollarValueToKyats(e)
-            textCurrency.innerHTML ="Today curreny is "+ `<a class="high" style="font-size : 22px;" href="#">1</a>` +" USD($) in " +` <a style="color : yellow ; text-decoration : none; font-size : 22px;"  href="#">2100</a>`+" Ks"
+            textCurrency.innerHTML ="Today curreny is "+ `<a class="high" style="font-size : 22px;" href="#">1</a>` +" USD($) in " +` <a style="color : yellow ; text-decoration : none; font-size : 22px;"  href="#">2848</a>`+" Ks"
             removeFunc (e)
             
             
         };
         if(select.value === "THB" && select1.value === "MMK"){
             thaiValueToKyats(e)                      /* 1*/                                          //63ks                  
-            textCurrency.innerHTML ="Today curreny is "+ `<a class="high" style="font-size : 22px;"  href="#">1</a>` +" THB in " +` <a style="color : yellow ; text-decoration : none; font-size : 22px;"  href="#">63</a>`+" Ks"
+            textCurrency.innerHTML ="Today curreny is "+ `<a class="high" style="font-size : 22px;"  href="#">1</a>` +" THB in " +` <a style="color : yellow ; text-decoration : none; font-size : 22px;"  href="#">86.5</a>`+" Ks"
             removeFunc (e)
         };
         if(select.value === "SGD" && select1.value === "MMK"){
             sgdValueToKyats(e)                                                                         //1530ks
-            textCurrency.innerHTML ="Today curreny is "+ `<a class="high" style="font-size : 22px;"  href="#">1</a>` +" SGD in " +` <a style="color : yellow ; text-decoration : none; font-size : 22px;"  href="#">1530</a>`+" Ks"
+            textCurrency.innerHTML ="Today curreny is "+ `<a class="high" style="font-size : 22px;"  href="#">1</a>` +" SGD in " +` <a style="color : yellow ; text-decoration : none; font-size : 22px;"  href="#">2100</a>`+" Ks"
             removeFunc (e)
         };
 
