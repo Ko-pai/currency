@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Currency Checker</h1>
+        <article>
+            <div class="inputContainer">
+                <div class="dollar">
+                    <select class="dClas">
+                        <option value="USD">USD&nbsp;&nbsp;$&nbsp;&nbsp;&nbsp;</option>
+                        <option value="THB" >Thai &nbsp;&nbsp;(THB)&nbsp;</option>
+                        <option value="SGD">Singapore&nbsp;&nbsp;(SGD)</option>
+                        <option value="MMK">Myanmar (Kyats)&nbsp;&nbsp;&nbsp;</option>
+                    </select>
+                    <input type="text" name="Num"  id="Put" onkeypress="return numericNumber(event)" placeholder="" >
+                </div>
+                <div class="myanmar">
+                    <select class="dClas" id="Mc">
+                        <option value="MMK">Myanmar (Kyats)&nbsp;&nbsp;&nbsp;</option>
+                        <option value="THB1" >Thai &nbsp;&nbsp;(THB)&nbsp;</option>
+                        <option value="SGD1">Singapore&nbsp;&nbsp;(SGD)</option>
+                        <option value="USD">USD&nbsp;&nbsp;$&nbsp;&nbsp;&nbsp;</option>
+                    </select>
+                    <input type="text" name="showNum" id="Show" disabled="disabled" onkeypress="return numericNumber(event)" placeholder="0 ks" maxlength="25">
+                </div>
+                <a style=
+            </div>
+            <div class="textCurrency"></div>
+            <button class="click">Change</button>
+        </article>
+        
+    </div>
+    <script src="scripts.js">
+    </script>
+</body>
+</html>
